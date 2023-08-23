@@ -1,22 +1,41 @@
+/*Elements*/
+
 body{
     background-color:#EBEBEB ;
 }
 
-#search{
-    max-width: 25px;
+h3{
+    position: relative;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
 }
 
+/*classes*/
+
+/*color assignment*/
+
+.pink{
+    background-color: #D79999;
+    border: 1px solid #050505;
+    color:#050505;
+}
+
+.grey{
+    background-color: #A1A3A5;
+}
+
+
+/**/
 .header{
     padding-top:15px;
     padding-bottom:15px;
-    background-color:#A1A3A5 ;
 }
 
 .navbar-brand{
-    background-color:#D79999;
     padding-left: 200px;
     padding-right:200px;
-    border-radius: 325px;
+    border-radius: 25px;
 }
 
 .card{
@@ -25,12 +44,13 @@ body{
 }
 
 .laptop{
-    background-color: #D79999;
-
-}
+    text-align: center;
+    height: 250px;
+    }
 
 .specs{
-    background-color: #A1A3A5;
+    border: 1px solid #050505 ;
+    
 }
 
 .laptopimgage{
@@ -38,8 +58,29 @@ body{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 25px;
 }
 
 .icon{
     width: 10%;
+    float:left;
+    margin-left: 5px;
+    margin-right:5px;
+    margin-top:4px;
+    margin-bottom: 4px;
 }
+
+.footer{
+    height:100px ;
+}
+.accesories img{
+    margin-left:8px;
+    margin-top: 3px;
+}
+
+/*IDs*/
+
+#search{
+    max-width: 25px;
+}
+

@@ -1,19 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Stylesheets-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
+
+    <!--Website name-->
     <title>Laptop configuration</title>
+
 </head>
 
 <body>
-    <div class="header">
-        <nav class="navbar navbar-dark">
+
+    <!--Header section-->
+    <div class="header grey">
+
+        <!--Nav bar configuration using Bootstrap 5-->
+        <nav class="navbar ">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="#">Laptop configuration</a>  
+                    <a class="navbar-brand pink" href="#">Laptop configuration</a>  
                 </div>
                 <form class="navbar-form navbar-right" action="index.html">
                     <div class="input-group">
@@ -31,21 +40,24 @@
     </div>
     <br>
 
+    <!--Laptop section-->
     <div class="container laptops">
         <h1>laptops</h1>
 
         <div class="row">
-
+            <!--Laptop 1's card-->
             <div class="card col-sm-4">
-                <div class="laptop">
+                <div class="laptop pink ">
                     <h2>MacBook Pro 13”</h2>
                     <img class="laptopimgage" src="img\macbookpro.png" alt="MackBook Pro 13">
                     <p class="price1">R 30 999</p>
                 </div>
                 
-                <div class="cpu specs">
+                <!--CPU-->
+                <div class="specs grey">
                     <img class="icon" src="ico\cpu.png" alt="CPU">
                     <h3>CPU</h3>
+                    <br>
                     <form class="cpu-form" action="index.html" method="post">
                         <input type="radio" id="cpu1" name="cpu" value="8-core CPU Apple M2 chip">
                         <label for="cpu1">8-core CPU Apple M2 chip</label><br>
@@ -54,18 +66,20 @@
                     </form>
                 </div>
 
-                <div class="gpu specs">
+                <!--GPU-->
+                <div class="specs grey">
                     <img class="icon" src="ico/gpu.png" alt="GPU-icon">
-                    <h3>GPU</h3>
+                    <h3>GPU</h3><br>
                     <form class="gpu-form" action="index.html" method="post">
                         <input type="radio" id="gpu1" name="gpu" value="10-core GPU Apple M2 chip">
                         <label for="gpu1">10-core GPU Apple M2 chip</label><br>
                     </form>
                 </div>
 
-                <div class="ram specs">
+                <!--RAM-->
+                <div class="specs grey">
                     <img class="icon" src="ico/ram.png" alt="RAM-icon">
-                    <h3>RAM</h3>
+                    <h3>RAM</h3><br>
                     <form class="ram-form" action="index.html" method="post">
                         <input type="radio" id="ram1" name="ram" value="8GB unified memory">
                         <label for="ram1">8GB unified memory</label><br>
@@ -74,9 +88,10 @@
                     </form>
                 </div>
 
-                <div class="storage specs">
+                <!--Storage-->
+                <div class="specs grey">
                     <img class="icon" src="ico/folder.png" alt="Storage">
-                    <h3>Storage</h3>
+                    <h3>Storage</h3><br>
                 <form class="storage" action="index.html" method="post">
                     <input type="radio" id="storage1" name="storage" value="512GB SSD">
                     <label for="storage1">512GB SSD</label><br>
@@ -89,34 +104,38 @@
 
             <br>
 
+            <!--Laptop 2's card-->
             <div class="card col-sm-4">
-                <div class="laptop">
+                <div class="laptop pink">
                     <h2>Dell Inspiron G15</h2>
-                    <img class="laptopimgage" src="img\Dell laptop.png" alt="Dell Inspiron G15">
+                    <img class="laptopimgage" src="img\dell laptop2.png" alt="Dell Inspiron G15">
                     <p class="price">R 16 999</p>
                 </div>
                 
-                <div class="cpu specs">
+                <!--CPU-->
+                <div class="specs grey">
                     <img class="icon"  src="ico\cpu.png" alt="CPU" >
-                    <h3>CPU</h3>
+                    <h3>CPU</h3><br>
                     <form class="cpu-form" action="index.html" method="post">
                         <input type="radio" id="cpu3" name="cpu" value="AMD Ryzen 5 5600H up to 4.2GHz Processor">
                         <label for="cpu3">AMD Ryzen 5 5600H up to 4.2GHz Processor</label><br>
                     </form>
                 </div>
 
-                <div class="gpu specs">
+                <!--GPU-->
+                <div class="specs grey">
                     <img class="icon" src="ico/gpu.png" alt="GPU-icon" >
-                    <h3>GPU</h3>
+                    <h3>GPU</h3><br>
                     <form class="gpu-form" action="index.html" method="post">
                         <input type="radio" id="gpu3" name="gpu" value="NVDIA Geforce RTX 3050 with 4GB GDDR6">
                         <label for="gpu3">NVDIA Geforce RTX 3050 with 4GB GDDR6</label><br>
                     </form>
                 </div>
 
-                <div class="ram specs">
+                <!--RAM-->
+                <div class="specs grey">
                     <img class="icon" src="ico/ram.png" alt="RAM-icon">
-                    <h3>RAM</h3>
+                    <h3>RAM</h3><br>
                     <form class="ram-form" action="index.html" method="post">
                         <input type="radio" id="ram3" name="ram" value="16GB">
                         <label for="ram3">16GB</label><br>
@@ -125,9 +144,10 @@
                     </form>
                 </div>
 
-                <div class="storage specs">
+                <!--Storage-->
+                <div class="specs grey">
                     <img class="icon" src="ico/folder.png" alt="Storage">
-                    <h3>Storage</h3>
+                    <h3>Storage</h3><br>
                     <form class="storage-form" action="index.html" method="post">
                         <input type="radio" id="storage3" name="storage" value="512GB SSD">
                         <label for="storage3">512GB SSD</label><br>
@@ -140,36 +160,38 @@
 
             <br>
 
+            <!--Laptop 3's card-->
             <div class="card col-sm-4">
-                <div class="laptop">
+                <div class="laptop pink">
                     <h2>Lenovo IdeaPad Gaming 3</h2>
                     <img class="laptopimgage" src="img\lenovo IdeoPad 3.png" alt="Lenovo IdeoPad Gaming 3">
                     <p class="price">Ryzen:R 18699  Intel:R 19499 </p>
                 </div>
                 
-                <div class="cpu specs">
+                <!--CPU-->
+                <div class="specs grey">
                     <img class="icon"  src="ico\cpu.png" alt="CPU">
-                    <h3>CPU</h3>
+                    <h3>CPU</h3><br>
                     <form class="cpu-form" action="index.html" method="post">
                         <input type="radio" id="cpu5" name="cpu" value="Intel 12th Gen Core i5-12450H 3.30GHz Processor">
                         <label for="cpu5">Intel 12th Gen Core i5-12450H 3.30GHz Processor</label><br>
-                        <input type="radio" id="cpu6" name="cpu" value="AMD Ryzen 5 5600H up to 4.2GHz Processor">
-                        <label for="cpu6">AMD Ryzen 5 5600H up to 4.2GHz Processor</label><br>
                     </form>
                 </div>
 
-                <div class="gpu specs">
+                <!--GPU-->
+                <div class="specs grey">
                     <img class="icon" src="ico/gpu.png" alt="GPU-icon">
-                    <h3>GPU</h3>
+                    <h3>GPU</h3><br>
                     <form class="gpu-form" action="index.html" method="post">
                         <input type="radio" id="gpu5" name="gpu" value="NVDIA Geforce RTX 3050 with 4GB GDDR6">
                         <label for="gpu5">NVDIA Geforce RTX 3050 with 4GB GDDR6</label><br>
                     </form>
                 </div>
 
-                <div class="ram specs">
+                <!--RAM-->
+                <div class="specs grey">
                     <img class="icon" src="ico/ram.png" alt="RAM-icon">
-                    <h3>RAM</h3>
+                    <h3>RAM</h3><br>
                     <form class="ram-form" action="index.html" method="post">
                         <input type="radio" id="ram5" name="ram" value="16GB">
                         <label for="ram5">16GB</label><br>
@@ -178,16 +200,11 @@
                     </form>
                 </div>
 
-                <div class="storage specs">
+                <!--Storage-->
+                <div class="specs grey">
                     <img class="icon" src="ico/folder.png" alt="Storage">
-                    <h3>Storage</h3>
+                    <h3>Storage</h3><br>
                     <form class="storage-form" action="index.html" method="post">
-                        <p>Ryzen 5</p>
-                        <input type="radio" id="storage5" name="storage" value="256GB SSD and 1TB HDD">
-                        <label for="storage5">256GB SSD and 1TB HDD</label><br>
-                        <input type="radio" id="storage6" name="storage" value="512GB SSD and 1TB HDD">
-                        <label for="storage6">512GB SSD and 1TB HDD</label><br>
-                        <p>Intel i5</p>
                         <input type="radio" id="storage7" name="storage" value="512GB SSD">
                         <label for="storage5">512GB SSD</label><br>
                         <input type="radio" id="storage8" name="storage" value="1TB SSD">
@@ -203,14 +220,19 @@
 
     <br>
 
+    <!--Accessories section-->
     <div class="accesories">
         <h1>Accesories</h1>
 
-        <div class="headphones">
-            <img src="ico\headphone.png" alt="headphones-icon" style="width: 2%;">
-            <h2>Headphones</h2>
-            <form class="headphones" action="index.html" method="post">
+        <!--headphones-->
+        <div class="specs grey">
+            <div class="pink">
+                <img class="icon" src="ico\headphone.png" alt="headphones-icon" style="width: 2%;">
+                <h3>Headphones</h3>
+            </div>
 
+            <form class="headphones" action="index.html" method="post">
+                <br>
                 <img src="img\Apple airpods max.png" alt="Apple Airpods Max" style="width: 3%;">
                 <input type="radio" id="headphone1" name="headphone" value="Apple AirPods Max">
                 <label for="headphone1">Apple AirPods Max Price:R 13 399</label><br>
@@ -227,14 +249,21 @@
                 <input type="radio" id="headphone4" name="headphone" value="SteelSeries Arctis Nova 1">
                 <label for="headphone2">SteelSeries Arctis Nova 1 Price:R1 799</label><br>
             </form>
+            <br>
         </div>
 
-        <div class="mouse">
-            <img src="ico\mouse.png" alt="Mouse-icon" style="width: 2%;">
-            <h2>Mouses</h2>
+        <!--mouse-->
+        <div class="specs grey">
+
+            <div class="pink">
+                <img class="icon" src="ico\mouse.png" alt="Mouse-icon" style="width: 2%;">
+                <h3>Mouses</h3>
+            </div>
+
             <form class="mouse" action="index.html" method="post">
 
-                <img src="img\Apple magic mouse.png" alt="Apple Magic Mouse" style="width: 2%;">
+                
+                <br><img src="img\Apple magic mouse.png" alt="Apple Magic Mouse" style="width: 2%;">
                 <input type="radio" id="mouse 1" name="mouse" value="Apple Magic Mouse">
                 <label for="mouse1">Apple Magic Mouse Price:R 1 899</label><br>
 
@@ -249,15 +278,20 @@
                 <img src="img\corsair mouse.png" alt="Corsair KATAR Elite Wireless Gaming Mouse" style="width: 2%;">
                 <input type="radio" id="mouse4" name="mouse" value="Corsair KATAR Elite Wireless Gaming Mouse">
                 <label for="mouse2">Corsair KATAR Elite Wireless Gaming Mouse price: R1 629</label><br>
-            </form>
+            </form><br>
         </div>
 
-        <div class="keyboard">
-            <img src="ico\keyboard.png" alt="Keyboard-icon" style="width: 2%;">
-            <h2>Keyboards</h2>
+        <!--keyboard-->
+        <div class="specs grey">
+
+            <div class="pink">
+                <img class="icon" src="ico\keyboard.png" alt="Keyboard-icon" style="width: 2%;">
+                <h3>Keyboards</h3>
+            </div>
+
             <form class="keyboard" action="index.html" method="post">
 
-                <img src="img\Apple magic keyboard.png" alt="Apple Magic Keyboard with Numeric Keypad International English" style="width: 4%;">
+                <br><img src="img\Apple magic keyboard.png" alt="Apple Magic Keyboard with Numeric Keypad International English" style="width: 4%;">
                 <input type="radio" id="keyboard1" name="keyboard" value="Apple Magic Keyboard with Numeric Keypad International English">
                 <label for="keyboard1">Apple Magic Keyboard with Numeric Keypad International English Price: 3 129</label><br>
 
@@ -272,15 +306,20 @@
                 <img src="img\razer keyboard.png" alt="Razer Ornata V3 TKL Gaming Keyboard" style="width: 4%;">
                 <input type="radio" id="keyboard4" name="keyboard" value="Razer Ornata V3 TKL Gaming Keyboard">
                 <label for="keyboard2">Razer Ornata V3 TKL Gaming Keyboard Price:R1 899</label><br>
-            </form>
+            </form><br>
         </div>
 
-        <div class="pad">
-            <img src="ico\mouse-pad.png" alt="mouse-pad-icon" style="width: 2%;">
-            <h2>mouse pad</h2>
+        <!--mouse pad-->
+        <div class="specs grey">
+
+            <div class="pink">
+                <img class="icon" src="ico\mouse-pad.png" alt="mouse-pad-icon" style="width: 2%;">
+                <h3>mouse pad</h3>
+            </div>
+
             <form class="pad" action="index.html" method="post">
 
-                <img src="img\apple mouse pad.png" alt="OrbitKey Organising Desk Mat Slim - Black" style="width: 4%;">
+                <br><img src="img\apple mouse pad.png" alt="OrbitKey Organising Desk Mat Slim - Black" style="width: 4%;">
                 <input type="radio" id="pad1" name="pad" value="OrbitKey Organising Desk Mat Slim - Black">
                 <label for="pad1">OrbitKey Organising Desk Mat Slim - Black Price: R 1 799</label><br>
 
@@ -295,14 +334,15 @@
                 <img src="img\logitech pad.png" alt="Logitech Desk Mat - Studio Series" style="width: 4%;">
                 <input type="radio" id="pad4" name="pad" value="Logitech Desk Mat - Studio Series">
                 <label for="pad2">Logitech Desk Mat - Studio Series Price:R 599</label><br>
-            </form>
+            </form><br>
         </div>
 
     </div>
 
     <br>
 
-    <div>Footer
+    <!--Footer/end section-->
+    <div class="footer pink">Footer
         <!--
             <a href="https://www.flaticon.com/free-icons/soc" title="soc icons">Soc icons created by Freepik - Flaticon</a>
             <a href="https://www.flaticon.com/free-icons/hard-disk" title="hard disk icons">Hard disk icons created by Lagot Design - Flaticon</a>
