@@ -78,6 +78,41 @@ h3{
     margin-top: 3px;
 }
 
+.collapsible{
+    background-color: #D79999;
+    color: #050505;
+    padding: 10px;
+    text-align: left;
+}
+
+.active, .collapsible:hover{
+    background-color:#A1A3A5 ;
+}
+
+.collapsible::after{
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+
+}
+
+.active::after{
+    content: "\2212";
+}
+
+/*come back and add this to the specs class*/
+
+.content{
+    padding:0 18px;
+    max-height: 0;
+    overflow:hidden;
+    transition: max-height  0.2s ease-out;
+    background-color: #A1A3A5;
+
+}
+
 /*IDs*/
 
 #search{

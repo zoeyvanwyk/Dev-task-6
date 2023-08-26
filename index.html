@@ -7,6 +7,7 @@
     <!--Stylesheets-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
+    <!--<script src="index.js"></script>-->
 
     <!--Website name-->
     <title>Laptop configuration</title>
@@ -54,9 +55,14 @@
                 </div>
                 
                 <!--CPU-->
-                <div class="specs grey">
+                <button type="button" class="collapsible">
                     <img class="icon" src="ico\cpu.png" alt="CPU">
                     <h3>CPU</h3>
+                </button>
+                <!--come back and remove the content class-->
+                <div class="specs grey content">
+                    <!--<img class="icon" src="ico\cpu.png" alt="CPU">
+                    <h3>CPU</h3>-->
                     <br>
                     <form class="cpu-form" action="index.html" method="post">
                         <input type="radio" id="cpu1" name="cpu" value="8-core CPU Apple M2 chip">
@@ -355,7 +361,8 @@
         -->
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>-->
 </body>
 
 </html>
