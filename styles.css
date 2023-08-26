@@ -48,9 +48,16 @@ h3{
     height: 250px;
     }
 
-.specs{
+/*.specs{
     border: 1px solid #050505 ;
     
+    
+}*/
+
+.menu{
+    height: 5em;
+    margin-top: 15%;
+    /*vertical-align: auto;*/
 }
 
 .laptopimgage{
@@ -83,6 +90,7 @@ h3{
     color: #050505;
     padding: 10px;
     text-align: left;
+    outline:none;
 }
 
 .active, .collapsible:hover{
@@ -91,7 +99,7 @@ h3{
 
 .collapsible::after{
     content: '\002B';
-    color: white;
+    color: #050505;
     font-weight: bold;
     float: right;
     margin-left: 5px;
@@ -105,13 +113,15 @@ h3{
 /*come back and add this to the specs class*/
 
 .content{
-    padding:0 18px;
+    padding:0 15px;
     max-height: 0;
     overflow:hidden;
     transition: max-height  0.2s ease-out;
     background-color: #A1A3A5;
+    border: 1px solid #050505 ;
 
 }
+
 
 /*IDs*/
 
