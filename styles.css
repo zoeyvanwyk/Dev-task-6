@@ -54,6 +54,8 @@ h5{
     text-align: center;
     height: 250px;
     color:#050505;
+    border-radius: 25px;
+    border: 1px solid #050505 ;
     
 }
 
@@ -71,6 +73,7 @@ h5{
     padding: 10px;
     text-align: left;
     outline:none;
+    border-radius: 25px;
 }
 
 .icon{
@@ -89,8 +92,13 @@ h5{
     font-size: larger;
     float: right;
     margin-left: 5px;
+    /*box-shadow: 10px 10px 5px #A1A3A5;*/
 
 }
+
+/*.content::after{
+    border: 1px solid #050505 ;
+}*/
 
 .content{
     padding:0 15px;
@@ -98,14 +106,16 @@ h5{
     overflow:hidden;
     transition: max-height  0.2s ease-out;
     background-color: #A1A3A5;
-    border: 1px solid #050505 ;
+    /*border: 1px solid #050505 ;*/
+    border-radius: 25px;
 
 }
 
-.menu{
+.menu::after{
     /*height: 5em;*/
     /*margin-top: 15%;*/
     /*vertical-align: auto;*/
+    /*border: 1px solid #050505 ;*/
 }
 
 
