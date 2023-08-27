@@ -25,6 +25,7 @@
                 <div class="navbar-header">
                     <a class="navbar-brand pink" href="#">Laptop configuration</a>  
                 </div>
+                <p class="navbar-text" id="price">Price:</p>
                 <form class="navbar-form navbar-right" action="index.html">
                     <div class="input-group">
                         <input type="text" class="form-control" placeholder="Search" name="search">
@@ -51,7 +52,7 @@
                 <div class="laptop">
                     <h2>MacBook Pro 13”</h2>
                     <img class="laptopimgage" src="img\macbookpro.png" alt="MackBook Pro 13">
-                    <p class="price1">R 30 999</p>
+                    <p id="price1">R 27999</p>
                 </div>
                 
                 <!--CPU-->
@@ -94,9 +95,9 @@
                     </button>
                     <div class="content">
                         <form class="menu" action="index.html" method="post">
-                            <input type="radio" id="ram1" name="ram" value="8GB unified memory">
+                            <input type="radio" id="ram1" name="ram" value="8GB unified memory" data-price="0"  >
                             <label for="ram1">8GB unified memory</label><br>
-                            <input type="radio" id="ram2" name="ram" value="16GB unified memory">
+                            <input type="radio" id="ram2" name="ram" value="16GB unified memory" data-price="5000">
                             <label for="ram1">16GB unified memory</label><br>
                         </form>
                     </div>
@@ -110,9 +111,9 @@
                     </button>
                     <div class="content"> 
                         <form class="menu" action="index.html" method="post">
-                            <input type="radio" id="storage1" name="storage" value="512GB SSD">
+                            <input type="radio" id="storage1" name="storage" value="512GB SSD" data-price="4500">
                             <label for="storage1">512GB SSD</label><br>
-                            <input type="radio" id="storage2" name="storage" value="1TB SSD">
+                            <input type="radio" id="storage2" name="storage" value="1TB SSD" data-price="3500">
                             <label for="storage2">1TB SSD</label><br>
                         </form>
                     </div>
@@ -127,7 +128,7 @@
                 <div class="laptop">
                     <h2>Dell Inspiron G15</h2>
                     <img class="laptopimgage" src="img\dell laptop2.png" alt="Dell Inspiron G15">
-                    <p class="price">R 16 999</p>
+                    <p id="price2">R 16 999</p>
                 </div>
                 
                 <!--CPU-->
@@ -200,7 +201,7 @@
                 <div class="laptop">
                     <h2>Lenovo IdeaPad Gaming 3</h2>
                     <img class="laptopimgage" src="img\lenovo IdeoPad 3.png" alt="Lenovo IdeoPad Gaming 3">
-                    <p class="price">Ryzen:R 18699  Intel:R 19499 </p>
+                    <p id="price3">Intel:R 19499 </p>
                 </div>
                 
                 <!--CPU-->
@@ -416,7 +417,7 @@
     </div>
 
     <script src="index.js"></script>
-    <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 
 </html>
