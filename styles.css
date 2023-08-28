@@ -44,6 +44,10 @@ h5{
 
 /*laptop*/
 
+.laptops{
+    padding-top:  100px;
+}
+
 .card{
     background-color: #EBEBEB;
     border: none;

@@ -15,15 +15,47 @@ for(i = 0; i < coll.length; i++) {
 }
 
 //Price 
-const ram1 = 3000;
-const  ram2 = 5000;
-let totalPrice= 0;
 
-const ramtot = ram1 +ram2
-let newName = 'Price R: ' + ramtot;
-document.getElementById("price").innerHTML = newName
+function updateTotalPrice(){
+    const elementsWithDataPrice  = document.querySelectorAll('[data-price]');
+    let totalPrice = 0;
 
-//let laptop1total= getElementById("price1")
-//const ram1 = getElementById("ram1").addEventListener("click",addRam())
-//const ram2 =getElementById("ram2")
-//const price = parseFloat(radioButton.getAttribute("data-price"));
+    elementsWithDataPrice.forEach(element => {
+        if ((element.type ==='radio') && element.checked){
+            const price = parseFloat(element.getAttribute('data-price'));
+
+            totalPrice += price;
+        }
+    });
+
+    const totalPriceElement = document.getElementById('totalPrice');
+    totalPriceElement.innerHTML = 'R: ' + totalPrice;
+
+}
+
+const radioButtons = document.querySelectorAll('[type="radio"]');
+
+radioButtons.forEach(radioButton => {
+    radioButton.addEventListener('change', updateTotalPrice);
+})
+
+updateTotalPrice();
+
+function resetSelections(){
+    const elementsWithDataPrice = document.querySelectorAll('[data-price]');
+
+    elementsWithDataPrice.forEach(element => {
+        if (element.type === 'radio'){
+            element.checked = false;
+        }
+    });
+
+    const totalPriceElement = document.getElementById('totalPrice');
+    totalPriceElement.innerHTML =  'R: 0'
+
+}
+
+const resetButton = document.getElementById('resetButton');
+resetButton.addEventListener('click', resetSelections);
+
+

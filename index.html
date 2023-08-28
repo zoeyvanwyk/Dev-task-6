@@ -16,8 +16,9 @@
 
 <body>
 
+    
     <!--Header section-->
-    <div class="header">
+    <div class="header fixed-top">
 
         <!--Nav bar configuration using Bootstrap 5-->
         <nav class="navbar ">
@@ -25,7 +26,11 @@
                 <div class="navbar-header">
                     <a class="navbar-brand pink" href="#">Laptop configuration</a>  
                 </div>
-                <p class="navbar-text" id="price">Price:</p>
+                <div>
+                    <input class="btn btn-secondary"  id="resetButton"  type="reset">
+                    <button type="button" class="btn btn-secondary" id="totalPrice">Submit order Price:
+                    <!--<p class="navbar-text">Price:</p></button>-->
+                </div>
                 <form class="navbar-form navbar-right" action="index.html">
                     <div class="input-group">
                         <input type="text" class="form-control" placeholder="Search" name="search">
@@ -41,6 +46,8 @@
         
     </div>
     <br>
+
+
 
     <!--Laptop section-->
     <div class="container laptops">
@@ -61,14 +68,11 @@
                         <img class="icon" src="ico\cpu.png" alt="CPU">
                         <h3>CPU</h3>
                     </button>
-                    <!--come back and remove the content class-->
                     <div class="content">
                         <form class="menu" action="index.html" method="post">
-                            <input type="radio" id="cpu1" name="cpu" value="8-core CPU Apple M2 chip">
+                            <input type="radio" id="cpu1" name="cpu" value="8-core CPU Apple M2 chip" data-price="27999">
                             <label for="cpu1">8-core CPU Apple M2 chip</label>
                             <br>
-
-                            <!--<button type="reset">Reset</button> -->
                         </form>
                     </div>
                 </div>
@@ -139,7 +143,7 @@
                     </button>
                     <div class="content">
                         <form class="menu" action="index.html" method="post">
-                            <input type="radio" id="cpu3" name="cpu" value="AMD Ryzen 5 5600H up to 4.2GHz Processor">
+                            <input type="radio" id="cpu3" name="cpu" value="AMD Ryzen 5 5600H up to 4.2GHz Processor" data-price="13999">
                             <label for="cpu3">AMD Ryzen 5 5600H up to 4.2GHz Processor</label><br>
                         </form>
                     </div>
@@ -212,7 +216,7 @@
                     </button>
                     <div class="content">
                         <form class="menu" action="index.html" method="post">
-                            <input type="radio" id="cpu5" name="cpu" value="Intel 12th Gen Core i5-12450H 3.30GHz Processor">
+                            <input type="radio" id="cpu5" name="cpu" value="Intel 12th Gen Core i5-12450H 3.30GHz Processor"  data-price="16499">
                             <label for="cpu5">Intel 12th Gen Core i5-12450H 3.30GHz Processor</label><br>
                         </form>
                     </div>
