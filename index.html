@@ -28,8 +28,7 @@
                 </div>
                 <div>
                     <input class="btn btn-secondary"  id="resetButton"  type="reset">
-                    <button type="button" class="btn btn-secondary" id="totalPrice">Submit order Price:
-                    <!--<p class="navbar-text">Price:</p></button>-->
+                    <button id="totalPriceButton"  class="btn btn-secondary">Submit <span id="totalPrice">$0</span></button>
                 </div>
                 <form class="navbar-form navbar-right" action="index.html">
                     <div class="input-group">
@@ -85,7 +84,7 @@
                     </button>
                     <div class="content">
                         <form class="menu" action="index.html" method="post">
-                            <input type="radio" id="gpu1" name="gpu" value="10-core GPU Apple M2 chip">
+                            <input type="radio" id="gpu1" name="gpu" value="10-core GPU Apple M2 chip" data-price="0">
                             <label for="gpu1">10-core GPU Apple M2 chip</label><br>
                         </form>
                     </div>
@@ -157,7 +156,7 @@
                     </button>
                     <div class="content">
                         <form class="menu" action="index.html" method="post">
-                            <input type="radio" id="gpu3" name="gpu" value="NVDIA Geforce RTX 3050 with 4GB GDDR6">
+                            <input type="radio" id="gpu3" name="gpu" value="NVDIA Geforce RTX 3050 with 4GB GDDR6" data-price="0">
                             <label for="gpu3">NVDIA Geforce RTX 3050 with 4GB GDDR6</label><br>
                         </form>
                     </div>
@@ -230,7 +229,7 @@
                     </button>
                     <div class="content">
                         <form class="menu" action="index.html" method="post">
-                            <input type="radio" id="gpu5" name="gpu" value="NVDIA Geforce RTX 3050 with 4GB GDDR6">
+                            <input type="radio" id="gpu5" name="gpu" value="NVDIA Geforce RTX 3050 with 4GB GDDR6" data-price="0">
                             <label for="gpu5">NVDIA Geforce RTX 3050 with 4GB GDDR6</label><br>
                         </form>
                     </div>

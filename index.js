@@ -41,6 +41,8 @@ radioButtons.forEach(radioButton => {
 
 updateTotalPrice();
 
+//reset
+
 function resetSelections(){
     const elementsWithDataPrice = document.querySelectorAll('[data-price]');
 
@@ -58,4 +60,13 @@ function resetSelections(){
 const resetButton = document.getElementById('resetButton');
 resetButton.addEventListener('click', resetSelections);
 
+//payment
 
+function displaySuccessMessage(){
+    alert('Your order has successfully been processed! Thank you for your purchase.');
+    
+}
+
+const totalPriceButton = document.getElementById('totalPriceButton');
+totalPriceButton.addEventListener('click', displaySuccessMessage);
+totalPriceButton.addEventListener('click', resetSelections);
